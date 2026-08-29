@@ -24,12 +24,6 @@ section > header h3 {
     font-size: 32px;
 }
 
-main > section{
-    border: 1px solid rgb(80, 80, 80);
-    border-radius: 15px;
-    margin: 20px;
-}
-
 /* css para minha figure */
 
 .imagem-publicacao {
@@ -75,4 +69,21 @@ article footer{
     font-size: 14px;
     margin-top: 20px;
     padding-top: 10px;
+}
+
+article{
+    background-color: white;
+    margin-bottom: 25px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #666;
+    border-radius: 10px;
+    border-image: none;
+    padding: 25px;
+}
+
+article h3{
+    color: black;
+    font-size: 25px;
+    margin-top: 5px;
 }
