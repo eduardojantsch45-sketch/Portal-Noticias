@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfil</title>
+    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/perfil.css">
 </head>
 <body>
     <header> 
@@ -20,9 +22,69 @@
             </nav>
             <!-- fim do Menu Principal -->
     </header>
+    <!-- conteudo da section perfil -->
+    <main class="container">
+        <section class="apresentacao-perfil">
+            <header class="cabeca-perfil">
+                <figure class="capa-perfil">
+                    <img src="./img/perfil/imagem_de_capa.jpg" alt="imagem de capa">
+                </figure>
+                <article class="perfil">
+                    <figure class="foto-perfil">
+                        <img src="./img/perfil/foto_de_perfil.jpg" alt="foto de perfil">
+                    </figure>
+                    <div class="informacao-perfil">
+                        <h3><strong>Carlos Eduardo Romero Jantsch</strong></h3>
+                        <p>Estudante de Redes de computadores</p>
+                        <p class="localidade">São Francisco do Sul, Santa Catarina</p>
+                        <p class="tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>Redes</span>
+                            <span>Git</span>
+                        </p>
+                    </div>
+                </article>
+            </header>
+        </section>
+        <section class="conteudo-perfil">
+            <article class="informacoes-perfil">
+                <h3>Sobre mim</h3>
+                <div class="sobre-mim"></div>
+                <p>
+                    Olá meu nome é carlos tenho 20 anos sou nacionalmente brasileiro,
+                    sou uma pessoa muito quieta e tímida alguém que tem dificuldades para
+                    se socializar mas tento mesmo assim do meu jeitinho e respeitando o
+                    outro.
+                </p>
+            </article>
+            <article class="informacoes-perfil">
+                <h3>Competências</h3>
+                <p>
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>Redes</span>
+                    <span>Git</span>
+                </p>
+            </article>
+
+            <article class="informacoes-perfil">
+                <h3>Formação e trajetória</h3>
+                <p class="curso">Redes de Computadores</p>
+                <p>Instituto Federal Catarinense Campus Araquari - Período noturno</p>
+            </article>
+
+            <article class="informacoes-perfil">
+                <h3>Interesses</h3>
+                <p>
+                    Saber sobre muitas linguagens de programação é uma das minhas ambições
+                    tanto quando idiomas; estudar e desenvolver na área mecânica e elétrica;
+                    conhecer outros países e regions ao redor do globo.
+                </p>
+            </article>
+        </section>
+    </main>
     
-    <h1> Perfil</h1>
-    <p> Minhas informações, como redes socias, trabalho.</p>
     
     <footer>
             <p>Projeto desenvolvido na disciplina de Desenvolvimento Web I</p>
