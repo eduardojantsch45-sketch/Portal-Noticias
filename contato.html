@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>contato</title>
+    <link
+      rel="stylesheet"
+      href="/assets/css/reset.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/assets/css/global.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/assets/css/contato.css"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Meu Portal de Noticias</h1>
+      <p>Programação, Experiências e Cotidiano</p>
+      <!-- Menu Principal da minha Web-->
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html">Programação</a>
+          </li>
+          <li>
+            <a href="hobbies.html">Hobbies</a>
+          </li>
+          <li>
+            <a href="perfil.html">Sobre mim</a>
+          </li>
+          <li>
+            <a href="#">Contato</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- fim do Menu Principal -->
+    </header>
+    <!-- conteudo da section hobbies -->
+    <main class="pagina-contato">
+      <section class="contato">
+        <header>
+          <h1>Vamos conversar?</h1>
+        </header>
+
+        <form
+          method="post"
+          action="#"
+        >
+          <div class="campo">
+            <label for="nome">Nome:</label>
+            <input
+              type="nome"
+              name="nome"
+              id="nome"
+              required
+            />
+          </div>
+
+          <div class="campo">
+            <label for="email">E-mail:</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="nome@gmail.com"
+              autocomplete="email"
+              required
+            />
+          </div>
+
+          <div class="campo">
+            <label for="mensagem">Mensagem:</label>
+            <textarea
+              name="mensagem"
+              id="mensagem"
+              required
+            >
+            </textarea>
+          </div>
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>Projeto desenvolvido na disciplina de Desenvolvimento Web I</p>
+      <p>IFC - Campus Araquari</p>
+    </footer>
+  </body>
+</html>

@@ -1,136 +1,255 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport"   content="width=device-width, initial-scale=1.0">
-        <title>Principal</title>
-        <link rel="stylesheet" href="./css/reset.css">
-        <link rel="stylesheet" href="./css/global.css">
-        <link rel="stylesheet" href="./css/styles.css">
-    </head>
-    <body>
-        <header> 
-            <h1>Meu Portal de Noticias</h1>
-            <p>Programação, Experiências e Cotidiano</p>
-            <!-- Menu Principal da minha Web-->
-            <nav>
-                <ul>
-                    <li><a href="index.html">Programação</a></li>
-                    <li><a href="hobbies.html">Hobbies</a> </li>
-                    <li><a href="perfil.html">Sobre mim</a> </li>
-                </ul>
-            </nav>
-            <!-- fim do Menu Principal -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Principal</title>
+    <link
+      rel="stylesheet"
+      href="/assets/css/reset.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/assets/css/global.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/assets/css/styles.css"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Meu Portal de Noticias</h1>
+      <p>Programação, Experiências e Cotidiano</p>
+      <!-- Menu Principal da minha Web-->
+      <nav>
+        <ul>
+          <li>
+            <a href="#">Programação</a>
+          </li>
+          <li>
+            <a href="hobbies.html">Hobbies</a>
+          </li>
+          <li>
+            <a href="perfil.html">Sobre mim</a>
+          </li>
+          <li>
+            <a href="contato.html">Contato</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- fim do Menu Principal -->
+    </header>
+    <main>
+      <section class="pesquisa">
+        <header>
+          <form
+            action="#"
+            method="get"
+          >
+            <!-- Campo de busca -->
+
+            <div class="campo">
+              <label for="buscar">Buscar publicação</label>
+              <input
+                type="search"
+                name="buscar"
+                id="buscar"
+                placeholder="Digite uma palavra chave"
+              />
+            </div>
+
+            <!-- Campo de categoria -->
+
+            <div class="campo">
+              <label for="categoria">Categoria</label>
+              <select
+                name="categoria"
+                id="categoria"
+              >
+                <option value="">Todas as categorias</option>
+                <option value="web1">Desenvolvimento Web I</option>
+                <option value="dados">Banco de Dados</option>
+                <option value="redes">Segurança de Redes</option>
+              </select>
+            </div>
+
+            <!-- Campo de tecnologia -->
+
+            <div class="campo">
+              <label for="tecnologia">Tecnologia</label>
+              <select
+                name="tecnologia"
+                id="tecnologia"
+              >
+                <option value="">Todas as tecnologias</option>
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="java-script">JavaScript</option>
+                <option value="mysql">MySQL</option>
+              </select>
+            </div>
+
+            <div class="botao">
+              <button type="submit">Filtrar noticias</button>
+            </div>
+          </form>
         </header>
-        <!-- conteudo da section hobbies -->
-        <main>
-            <section>
-                <article>
-                    <header>
-                        <p class="categoria">Desenvolvimento Web I</p>
-                        <h3>Como uma página de perfil tornou-se um Portal de Noticias</h3>
-                        <p class="subtitulo">Estrutura, semântica, páginas e links internos.</p>
-                    </header>
-                    <figure class="imagem-publicacao">
-                        <img src="./img/supra.jpg" alt="Imagem do pinterest">
-                        <figcaption>
-                            A aprendizagem em Desenvolvimento Web, acontece por etapas!
-                        </figcaption>
-                    </figure>
-                    <p>Na primeira aula, criamos uma página de perfil. Agora,
-                        essa página fará parte de um portal de coteúdos sobre programação,
-                        Hobbies e informações pessoais.
-                    </p>
-                    <p>
-                        Para organizar o conteúdo, utilizamos as tags:
-                        <strong> header</strong>, <strong> nav</strong>
-                        <strong> main</strong>, <strong> section</strong>,
-                        <strong> article</strong> <strong> e</strong> <strong> footer</strong> 
-                    </p>
+      </section>
 
-                    <footer>
-                        <p>Publicado em:
-                            <time datetime="2026-08-21T21:06">
-                                21 de agosto de 2026 ás 21:06
-                            </time>
-                        </p>
-                    </footer>
-                </article>
-            </section>
-            <section>
-                <article>
-                    <header>
-                        <p class="categoria">Banco de Dados</p>
-                        <h3>Como uma página de perfil tornou-se um Portal de Noticias</h3>
-                        <p class="subtitulo">Estrutura, semântica, páginas e links internos.</p>
-                    </header>
-                    <!-- <figure class="imagem-publicacao">
-                        <img src="./img/supra.jpg" alt="Imagem do pinterest">
-                        <figcaption>
-                            A aprendizagem em Desenvolvimento Web, acontece por etapas!
-                        </figcaption>
-                    </figure> -->
-                    <p>Na primeira aula, criamos uma página de perfil. Agora,
-                        essa página fará parte de um portal de coteúdos sobre programação,
-                        Hobbies e informações pessoais.
-                    </p>
-                    <p>
-                        Para organizar o conteúdo, utilizamos as tags:
-                        <strong> header</strong>, <strong> nav</strong>
-                        <strong> main</strong>, <strong> section</strong>,
-                        <strong> article</strong> <strong> e</strong> <strong> footer</strong> 
-                    </p>
+      <section>
+        <article>
+          <header>
+            <p class="categoria">Inteligência Artificial</p>
+            <h3>
+              Microsoft cria IA que trabalha sozinha enquanto você está longe do
+              PC; conheça
+            </h3>
+            <p class="subtitulo">
+              Microsoft anuncia novidades no Copilot, incluindo recursos para
+              criar soluções por comando e um agente que pode executar tarefas
+              sozinho; veja como funcionam as novidades
+            </p>
+          </header>
+          <figure class="imagem-publicacao">
+            <img
+              src="/assets/img/noticias/noticia1.png"
+              alt="inteligencia-artificial"
+            />
+            <figcaption>
+              Microsoft cria IA que trabalha sozinha enquanto você está longe do
+              PC
+            </figcaption>
+          </figure>
+          <p>
+            A Microsoft anunciou, nesta sexta-feira (25), novos recursos para o
+            Copilot, e o TechTudo acompanhou as reformulações da plataforma de
+            inteligência artificial. Entre as novidades estão as novas
+            funcionalidades para conversar com a IA, delegar tarefas, criar
+            aplicativos e automatizar as atividades. Segundo a desenvolvedora,
+            as novidades chegam para conectar as ferramentas que as pessoas já
+            usam a novos recursos do Copilot, ajudando a desenvolver,
+            personalizar e ampliar o uso no trabalho. O principal destaque é o
+            Autopilot, que funciona como uma espécie de funcionário virtual
+            dentro do Copilot, capaz de continuar trabalhando de forma autônoma
+            mesmo quando o usuário não está usando o computador. A seguir,
+            confira as principais novidades anunciadas pela Microsoft.
+          </p>
+          <footer>
+            <p>
+              Publicado em:
+              <time datetime="2026-08-21T21:06">
+                21 de agosto de 2026 ás 21:06
+              </time>
+            </p>
+            <a href="/noticias/noticia-html.html">Ler mais sobre ...</a>
+          </footer>
+        </article>
+      </section>
 
-                    <footer>
-                        <p>Publicado em:
-                            <time datetime="2026-08-19T21:06">
-                                19 de agosto de 2026 ás 21:06
-                            </time>
-                        </p>
-                    </footer>
-                </article>
-            </section>
+      <section>
+        <article>
+          <header>
+            <p class="categoria">Bancos digitais</p>
+            <h3>
+              Conta-salário dá para fazer Pix? Entenda as novas regras do Banco
+              Central
+            </h3>
+            <p class="subtitulo">
+              Banco Central libera Pix Automático em contas-salário a partir de
+              julho de 2027 e reforça regras de segurança, combate a fraudes
+              participação no sistema. Confira!
+            </p>
+          </header>
+          <figure class="imagem-publicacao">
+            <img
+              src="/assets/img/noticias/noticia2.png"
+              alt="banco-digital"
+            />
+            <figcaption>
+              Novas regras do Pix alteram pagamentos em contas-salário e
+              reforçam medidas de segurança e combate a fraudes
+            </figcaption>
+          </figure>
+          <p>
+            A conta-salário vai aceitar o Pix automático a partir de primeiro de
+            julho de 2027, mas o Pix comum continua bloqueado. As novas regras
+            do Banco Central do Brasil (BC), anunciadas nesta sexta-feira (18),
+            focam em segurança e combate a fraudes. O pacote traz a cobrança
+            híbrida misturando pix e boleto, novas obrigações para os bancos e
+            ajustes na entrada de novas instituições. As medidas vão ser
+            implementadas em etapas. A seguir, o TechTudo explica o que muda e
+            como as novidades podem afetar os usuários.
+          </p>
+          <footer>
+            <p>
+              Publicado em:
+              <time datetime="2026-09-18T17:19">
+                19 de setembro de 2026 ás 17:19
+              </time>
+            </p>
+            <a href="/noticias/noticia-banco-digital.html"
+              >Ler mais sobre ...
+            </a>
+          </footer>
+        </article>
+      </section>
 
-            <section>
-                <article>
-                    <header>
-                        <p class="categoria">Seguranças de Redes</p>
-                        <h3>Como uma página de perfil tornou-se um Portal de Noticias</h3>
-                        <p class="subtitulo">Estrutura, semântica, páginas e links internos.</p>
-                    </header>
-                    <!-- <figure class="imagem-publicacao">
-                        <img src="./img/supra.jpg" alt="Imagem do pinterest">
-                        <figcaption>
-                            A aprendizagem em Desenvolvimento Web, acontece por etapas!
-                        </figcaption>
-                    </figure> -->
-                    <p>Na primeira aula, criamos uma página de perfil. Agora,
-                        essa página fará parte de um portal de coteúdos sobre programação,
-                        Hobbies e informações pessoais.
-                    </p>
-                    <p>
-                        Para organizar o conteúdo, utilizamos as tags:
-                        <strong> header</strong>, <strong> nav</strong>
-                        <strong> main</strong>, <strong> section</strong>,
-                        <strong> article</strong> <strong> e</strong> <strong> footer</strong> 
-                    </p>
-
-                    <footer>
-                        <p>Publicado em:
-                            <time datetime="2026-08-21T21:06">
-                                21 de agosto de 2026 ás 21:06
-                            </time>
-                        </p>
-                    </footer>
-                </article>
-
-            </section>
-        </main>
-        <footer>
-            <p>Projeto desenvolvido na disciplina de Desenvolvimento Web I</p>
-            <p>IFC - Campus Araquari</p>
-
-        </footer>
-        <!-- fechando minha section hero -->
-    </body>
+      <section>
+        <article>
+          <header>
+            <p class="categoria">Segurança de Redes</p>
+            <h3>
+              Como seus dados vão para a Dark Web? Entenda os vazamentos e saiba
+              se proteger
+            </h3>
+            <p class="subtitulo">
+              Informações vazadas podem circular online e facilitar golpes
+              contra usuários e invasões; entenda riscos, saiba como verificar
+              exposições e confira como se proteger.
+            </p>
+          </header>
+          <figure class="imagem-publicacao">
+            <img
+              src="/assets/img/noticias/noticia3.png"
+              alt="seguranca-de-redes"
+            />
+            <figcaption>
+              Conheça os perigos da Dark Web e saiba o que fazer se seus dados
+              vazarem
+            </figcaption>
+          </figure>
+          <p>
+            E-mails, senhas, números de telefone, documentos e dados financeiros
+            que vazam na internet podem ser utilizados por criminosos para
+            acessar contas de terceiros e praticar golpes. Em alguns casos,
+            essas informações podem parar em fóruns, canais e mercados
+            clandestinos, inclusive na chamada Dark Web, e serem associadas a
+            dados obtidos em outros incidentes para tornar fraudes mais
+            convincentes. Com uma senha reutilizada, por exemplo, um criminoso
+            pode tentar acessar outros serviços; já informações pessoais podem
+            auxiliar na elaboração de mensagens de phishing direcionadas ou em
+            tentativas de se passar pela vítima.
+          </p>
+          <footer>
+            <p>
+              Publicado em:
+              <time datetime="2026-09-22T08:06">
+                22 de setembro de 2026 ás 08:06
+              </time>
+            </p>
+            <a href="/noticias/noticia-seguranca.html">Ler mais sobre ...</a>
+          </footer>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <p>Projeto desenvolvido na disciplina de Desenvolvimento Web I</p>
+      <p>IFC - Campus Araquari</p>
+    </footer>
+    <!-- fechando minha section -->
+  </body>
 </html>
